@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Footprints</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="title">Digital Footprints</div>
+        <div class="auth-links">
+            <a href="#" id="homeBtn">Home</a>
+            <a href="#" id="featuresBtn">Features</a>
+            <a id="signInBtn" class="btn" style="display: none;">Sign in</a>
+            <a id="signUpBtn" class="btn" style="display: none;">Sign up</a>
+            <a id="profileBtn" class="btn" style="display: none;">Profile</a>
+            <a id="logoutBtn" class="btn" style="display: none;">Logout</a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="section" id="homeSection">
+        <div class="main">
+            <div class="left-box">
+                <p>Digital Footprints detects breaches, tracks logins, and analyzes privacy risks with real-time alerts and AI-driven security insights.</p>
+            </div>
+            <div class="right-section">
+                <div class="feature">Data Breach & Dark Web</div>
+                <div class="feature">Website Privacy Scanner</div>
+                <div class="feature">Anonymous Login Detection</div>
+                <div class="feature">Real-Time Alerts</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="section" id="featuresSection">
+        <section class="features-page">
+            <h2>Our Features</h2>
+            <div class="features-container">
+                <div class="feature-box">
+                    <h3>Privacy Score</h3>
+                    <p>Rates privacy risk based on breaches, tracking, and dark web exposure.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Instant Security Alerts</h3>
+                    <p>Detects new logins, breaches, and sends real-time notifications.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Dark Web Monitoring</h3>
+                    <p>Scans for leaked credentials and alerts users.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Website Privacy Scanner</h3>
+                    <p>Identifies tracking threats and suggests fixes.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal modal" id="loginModal">
+        <div class="login-box">
+            <span class="close-btn" id="closeLogin">&times;</span>
+            <h2>Log in</h2>
+            <input type="email" id="loginEmail" placeholder="Enter Email">
+            <input type="password" id="loginPassword" placeholder="Enter Password">
+            <button id="loginSubmit" class="btn">Login</button>
+            <p>Don't have an account? <a id="switchToSignUp">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="login-modal modal" id="signUpModal">
+        <div class="login-box">
+            <span class="close-btn" id="closeSignUp">&times;</span>
+            <h2>Sign Up</h2>
+            <input type="text" id="signUpName" placeholder="Enter Name">
+            <input type="email" id="signUpEmail" placeholder="Enter Email">
+            <input type="password" id="signUpPassword" placeholder="Enter Password">
+            <button id="signUpSubmit" class="btn">Sign Up</button>
+            <p>Already have an account? <a id="switchToSignIn">Log in</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
